@@ -1,0 +1,14 @@
+:root {
+  --mi-page-color-2: azure;
+}
+
+body {
+  background-color: "aquamarine";
+}
+@media (min-width: 700px) {
+  body {
+    background-color: azure;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
