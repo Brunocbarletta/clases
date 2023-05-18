@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalando Bootstrap con archivos descargados</title>
+    <!-- 
+        Link de bootstrap 
+        https://getbootstrap.com/docs/5.3/getting-started/download/
+    -->
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="main-container">
+            <h1> Hola mundo </h1>
+        </div>
+
+        <!-- Elementos con clases de Bootstrap -->
+        <div class="container-fluid"><h2>Container fluid</h2></div>
+        <div class="container-xl"><h2>Container XL</h2></div>
+
+        <!-- Grilla de Bootstrap-->
+        <div class="container">
+            <!-- 
+                Las clases container y row son necesarias 
+                , aunque tengan nombres genericos son de bootstrap.
+            -->
+            <div class="row">
+                <div class="col-xl-6 col-md-4 bg-primary">
+                    <p>6 columnas</p>
+                </div>
+                <div class="col-xl-6 col-md-4 bg-success">
+                    <p>6 columnas</p>
+                </div>
+                <div class="col-xl-6 col-md-4 bg-success">
+                    <p>6 columnas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fuentes -->
+        <div class="container">
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+            <h6>h6</h6>
+
+            <hr>
+
+            <div class="display-1">display 1</div>
+            <div class="display-2">display 2</div>
+            <div class="display-3">display 3</div>
+            <div class="display-4">display 4</div>
+            <div class="display-5">display 5</div>
+            <div class="display-6">display 6</div>
+        </div>
+
+        <!-- Alineado -->
+        <div class="container">
+            <p class="text-start">Parrafo start</p>
+            <p class="text-center">Parrafo center</p>
+            <p class="text-end">Parrafo end</p>
+        </div>
+
+        <!-- Colores -->
+        <div class="container">
+            <p class="lead">Parrafo en color "lead"</p>
+        </div>
+
+        <!--img-->
+        <div class="container">
+            <img class="img-fluid rounded mb-2" src="../img/saitama-puño-arriba.jpg" alt="Saitama puño arriba">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Js Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

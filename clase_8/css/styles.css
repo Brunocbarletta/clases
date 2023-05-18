@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*pseudoclases y pseudoelementos*/
+/*Las pseudo clases se utilizan para indicar estados del elemento.*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+} 
+
+.btn-hover {
+    background-color: brown;
+    border: none;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btn-hover:hover {
+    background-color: blue;
+    color: orange;
+}
+
+.main-container-text__section {
+    margin-bottom: 5px;
+}
+
+.main-container__nav {
+    margin: 20px 0;
+}
+
+.main-container__nav ul li a:link {
+    text-decoration: none;
+    color: aqua;
+    background-color: rgba(0 0 0 / 50%);
+}
+
+.main-container__nav ul li a:hover {
+    font-weight: bold;
+    background-color: rgba(10 60 60 / 50%);
+    color: #2525a4;
+}
+
+.main-container__nav ul li a:active {
+   color: black;
+   font-size: 20px;
+   text-decoration: line-through;
+}
+
+.main-container__nav ul li a:visited {
+    color: red;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.main-container-items__div {
+    background-color: antiquewhite;
+    border: 2px solid red;
+    padding: 20px;
+}
+.main-container-items__div > div {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border: 1px solid black;
+    color: white;
+}
+
+.main-container-items__div div:not(.item-3) {
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+
+.main-container-items-2__div {
+    background-color: rgb(167 106 28 / 50%);
+    border: 2px solid green;
+    padding: 20px;
+}
+
+.main-container-items-2__div > div {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border: 1px solid red;
+    color: white;
+}
+
+.main-container-items-2__div div:not(.item-6) {
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.main-container-items-2__div div:last-child {
+    color: black;
+    font-size: 18px;
+    border-color: blue;
+}
+
+

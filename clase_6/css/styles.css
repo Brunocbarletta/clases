@@ -1,0 +1,69 @@
+.grid__section {
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    background: dimgray;
+    display: grid;
+
+    /* filas y columnas no explicitas */
+    /* grid-template-columns: 300px 100px; Primer_Column_px Segunda_Column_px  */
+    /* grid-template-rows: 40px 100px; */
+
+    /* filas y columnas explicitas */
+    /* fr es fraccion. 3fr son 3 fracciones del espacio disponible. */
+    /*Con fr no se desborda de los w800px y h600 hace las divisiones en base al ancho y alto definido.*/
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr 3fr;
+
+    /*El "repeat"*/
+    /* grid-template-columns: repeat(2, 100px); Las 2 primeras columnas las hace de 100px */
+
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4"
+    ;
+
+    justify-items: end;
+    align-items: center;
+}
+
+.grid__section div {
+    display: inline-block;
+    
+}
+
+.grid-item-1 {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    grid-area: item1;
+}
+.grid-item-2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(21, 255, 0);
+    grid-area: item2;
+}
+.grid-item-3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 208, 0);
+    grid-area: item3;
+}
+.grid-item-3 div {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 255);
+}
+.grid-item-4 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 191);
+    grid-area: item4;
+}
+.grid-item-4 div {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 76);
+}

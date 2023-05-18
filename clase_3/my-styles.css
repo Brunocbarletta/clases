@@ -1,0 +1,123 @@
+section article p{
+  color: black;
+}
+
+#principal{
+  color: aqua;
+}
+
+.texto-sm.productos-sm{
+  background: crimson;
+  font-size: 18px;
+}
+
+/* CSS ademas de ejecutar de arriba a abajo tiene jerarquias
+asi selectores -> ID>Clase>Etiqueta*/
+
+/* Nota: Tambien hay unos por encima de id ver en la presentacion. */
+/* 
+  Las clases estan por encima jerarquicamente 
+  que los selectores de etiquetas.
+  Como los estilos "in line" que es cuando dentro de la etiqueta se le agrega por el atributo style.
+  Entonces el orden de selectores quedaria asi
+  propiedad style="" en el tag > ID > Clase > Etiqueta
+  !important queda fuera de esta jerarquia por que aplica a una propiedad de css.
+*/
+p {
+  background: red;
+}
+
+.claseParrafo {
+  background: rgb(0, 255, 21);
+}
+/* Y el ID esta por encima de las clases jerarquicamente */
+#malaPractica {
+  background: rgb(47, 154, 255);
+}
+
+.claseParrafo2 {
+  background: blueviolet;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* font family */
+.impact {
+  font-family:Impact, sans-serif;
+}
+.comicSans {
+  font-family: "Comic Sans MS", sans-serif;
+}
+/* size */
+.textoGrande {
+  font-size: 20px;
+}
+
+.textoRelativo {
+  font-size: 200%;
+}
+
+/* weigth */
+.negrita {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+/* font style */
+.normal {
+  font-style: normal;
+}
+
+.italica {
+  font-style: italic;
+}
+
+/* text align */
+.centrar {
+  text-align: center;
+}
+
+.aLaDerecha {
+  text-align: right;
+}
+
+/* text decoration */
+.subrayado {
+  text-decoration: none;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+/* background */
+.fondoFuerte {
+  background-color: yellow;
+}
+
+.catsandstarsImage {
+  background-image:  url("imgs/perdonar-pedir-perdon-perdon.jpg");
+}
+
+.saitamaImage {
+  background-image: url("imgs/saitama-puño-arriba.jpg");
+}
+
+.eliminaBackground {
+  background: none;
+}
+
+/* 
+  Aca tengo 2 fondos. 
+  La primer url se sobre pone a la segunda pero al tener
+  la higuana un fondo transparente (Que tiene que tener fondo transparente y ser .gif) puedo 
+  poner de fondo la otra imagen solo como ejemplo.
+ */
+.Fondo2Urls {
+  background-image: url("imgs/higuana-fondo-trasnparente.gif"), url("imgs/stars.jpg");
+}

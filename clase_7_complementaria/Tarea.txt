@@ -1,0 +1,6 @@
+En esta clase se repaso media queries display flex y grid.
+
+Mejoras a mi proyecto final como lo deje en la actividad 5
++El profe hace una media querie por cada clase en lugar de un querie general.
++Testear el flex-basis de flexbox (esta muy copado)
++Mejorar el grid que estableci usando las propiedades item 1 -> (grid-column: 1 / 2, grid-row: 1 / 3), item2 -> (grid-column: 2 / 3, grid-row: 1 / 3), item3 -> (grid-column: 1 /3, grid-row: 2 /3) 

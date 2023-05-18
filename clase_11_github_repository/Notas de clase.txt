@@ -1,0 +1,4 @@
+
+Traerse cambios de la nube:
+git fetch me trae una rama aparte de la nube que posteriormente tengo que fusionar con merge. (2 pasos)
+git pull es lo de arriba pero en un solo paso. Descarga y hace el merge con mi rama actual. (1 paso)

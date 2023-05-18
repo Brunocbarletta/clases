@@ -1,0 +1,7 @@
+SASS
+sass es un preproprocesador de css que transpila el archivo .scss a .css
+".scss" de sass css
+
+Nota:
+Investigar diferencia entre sass y scss.
+Hasta donde se sass es un transpilador de .scss a .css basicamente.

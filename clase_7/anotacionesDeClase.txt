@@ -1,0 +1,10 @@
+Contenidos de la clase que vimos
++Diseño responsive
+++Para el diseño responsive debemos usar Media Queries
+
++Enfoque "Mobile First"
+++Es empezar a diseñar a partir de la vista mobile, despues diseñar 
+++a partir de vista para tablets y finalmente hacer modificaciones 
+++para la vista de escritorio/desktop.
+
++Utilizar grid para la estructura de la pagina

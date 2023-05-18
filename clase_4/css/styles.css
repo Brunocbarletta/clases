@@ -1,0 +1,89 @@
+/*Reset CSS*/
+/*Elimina el padding y el margin de todos los elementos*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Amstagram; /**El nombre que le pongo a la fuente*/
+  src: url(); /*me descargo una fuente y lo pongo en una carpeta assets/font -> aca las fuentes <-*/
+}
+
+h1 {
+  /*Utilizando font face*/
+  font-family: Amstagram;
+}
+
+p {
+  /*Utilizando fuente de google*/
+  font-family: 'Sedgwick Ave Display', sans-serif;
+}
+
+.cabecera {
+  /* z-index: 2; El cubo azul va a quedar encima de esta cabecera */
+  width: 600px;
+  background-color: #4f4f4f;
+  /*
+    El famoso padding que se lee como un reloj , en sentido horario 
+    Arriba, derecha, abajo, izquierda
+  */
+  /*Padding es para dar espacio a partir de los bordes internos hacia el centro*/
+  padding: 3px 5px 4px 6px; /*Arriba, derecha, abajo, izquierda*/
+  /*Margin es para dar espacio a los bordes externos hacia afuera*/
+  margin: 20px;
+  /*Border es un bordeado, el borde.*/
+  border: 1px dotted #000; /*Atajo para usar el borde se necesita minimo esos 3 valores. Esos son, el border-style, border-width y border-color*/
+}
+
+.cabecera ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+/*position relative*/
+.navbar {
+  position: relative; /*Position relative me habilita definir las 4 propíedades de abajo.
+  Puedo desplazar el elemento con las propiedades estas.*/
+  top: 0;
+  left: 600px;
+  right: 0;
+  bottom: 0;
+}
+
+.cabecera .subItem {
+  position: relative;
+}
+
+.subItem ul {
+  display: inline-block;
+  position: absolute;
+}
+
+.subItem ul li{
+  padding: 20px 0;
+}
+
+/* El elemento con position absolute se movera dentro del elemento con position relative. */
+
+/* .cabecera .subItem a {
+  height: 20px;
+  width: 100px;
+  display: block;
+} */
+
+
+.elemento-fixed {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: fixed;
+  top: 10px;
+  /*   
+  position: relative
+  z-index: 3; 
+  */
+}
+
+/*Repasar los "position" en especial sticky y fixed*/
+/*Repasar los z-index*/

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Nosotros</h1>
+        <img src="img/Nosotros-289153666-large.jpg" alt="Imagen de lo primero que salio en google al poner 'Nosotros'">
+
+        <!-- listas ordenadas -->
+        <!-- ol = ordered list -->
+        <ol>
+            <li>opcion</li>
+            <li>opcion</li>
+            <li>opcion</li>
+        </ol>
+        <!-- ul=unordered list Lista desordenada -->
+        <ul>
+            <li>opcion sin orden</li>
+            <li>opcion sin orden</li>
+            <li>opcion sin orden</li>
+        </ul>
+        <!-- df=definition list Lista de definicion -->
+        <dl>
+            <dt>Titulo de definicion</dt>
+            <dd>opcion de definicion</dd>
+            <dt>Titulo de definicion</dt>
+            <dd>opcion de definicion</dd>
+            <dt>Titulo de definicion</dt>
+            <dd>opcion de definicion</dd>
+        </dl>
+
+        <ol>
+            <li>opcion</li>
+            <li>opcion</li>
+            <li>opcion
+                <ul>
+                    <li>opcion</li>
+                    <li>opcion</li>
+                    <li>opcion</li>
+                </ul>
+            </li>
+        </ol>
+
+        <form action="archivoEjemplo.php" method="post" enctype="application/x-www-form-urlencoded">
+            <ul style="list-style: none;">
+                <li>
+                    <!-- 
+                        El atributo "for" en el label es una buena practica. Se utiliza mas que nada para hacer click en 
+                        el label y que active el input al que se le agrego el id. Es muy bueno para dispositivos tactiles o sin mouse. 
+                    -->
+                    <label for="textId">Usuario </label> 
+                    <input type="text" id="textId"> 
+                    <label for="passwordId">Contraseña </label>
+                    <input type="password" id="passwordId">
+                    <label for="emailId">Email </label>
+                    <input type="email" id="emailId">
+                </li>
+                <li>
+                    <textarea cols="20" rows="20"></textarea>
+                </li>
+                <li>
+                    <!-- 
+                        El atributo name puede ser igual o distinto. Esto cambiara el comportamiento. 
+                        Solo se puede tildar un name, por esto si 2 radio tienen el mismo name solo 
+                        permite tildar uno y destilda el otro.
+                        Por otro lado si se establecen radio buttons con distinto name podran estar tildados a la vez.
+                        Nota:
+                        Observar en los radio button que al clickear en el label de la opcion me tilda el radio button.
+                    -->
+                    <label for="r1Id">1-A</label>
+                    <input type="radio" name="Radio1" id="r1Id" value="opcion 1-A">
+                    <label for="r2Id">1-B</label>
+                    <input type="radio" name="Radio1" id="r2Id"value="opcion 1-B">
+                    <label for="r3Id">2</label>
+                    <input type="radio" name="Radio3" id="r3Id" value="opcion 2">
+                    <label for="r4Id">3</label>
+                    <input type="radio" name="Radio4" id="r4Id" value="opcion 3">
+                </li>
+            </ul>
+
+            <fieldset>
+                <legend>Talle de remera</legend>
+                  <!-- Aquí irán los elementos de formulario -->
+                    <select name="talles">
+                        <option value="L">Large</option>
+                        <option value="M">Medium</option>
+                        <option value="S">Small</option>
+                    </select>
+            </fieldset>
+
+            <input type="reset" value="resetear">
+            <input type="submit" value="enviar">
+            <input type="button" value="enviarJS">
+        </form>
+
+        <section style="margin-top: 10px;">
+            <table>
+                <tbody>
+                    <!-- row -->
+                    <tr>
+                        <!-- th table header -->
+                        <th>Productos</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                    <!-- row -->
+                    <tr>
+                        <!-- cols -->
+                        <td>zapatillas</td>
+                        <td>blancas</td>
+                        <td>2500</td>
+                    </tr>
+                    <tr>
+                        <!-- cols -->
+                        <td>remera</td>
+                        <td>azul</td>
+                        <td>1200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>

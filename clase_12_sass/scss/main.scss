@@ -1,0 +1,9 @@
+@import "variables";
+
+body{
+    background-color: $mi_page_color;
+    
+    @media(min-width: 700px) {
+        background-color: azure;
+    }
+}

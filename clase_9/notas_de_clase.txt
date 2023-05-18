@@ -1,0 +1,22 @@
+Framework y librerias
+-Librerias son metodos "externos" utilitarios que hacen cosas especificas.
+-Framework es un marco de trabajo. EL framework por ejemplo angular es un framework
+de javascript que a su vez tiene librerias para que funcione como ellos te lo plantean
+y hay que seguir ciertas reglas. Framework es un "marco de trabajo" en ese marco de trabajo
+cada framework te propone un funcionamiento y te da las herramientas para que funcione
+como te lo explican que supuestamnente traera alguna mejora con respecto al vanilla.
+
+
+Bootstrap es un framework de CSS.
+Instalamos bootstrap y traemos solo los archivos que necesitamos.
+Bootstrap nos brinda clases predefinidas y nos ahorra el tiempo de andar
+creando clases de css a mano para agregar un solo color por ejemplo.
+
+Doc de Bootstrap https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+Para buscar una clase buscamos en el buscador de la documentacion 
+por el nombre de la etiqueta o lo que querramos hacer.
+Por ejemplo si queremos hacer una grilla escribimos grid.
+
+Nota: Repasar un poco el contenido de esta clase en el pdf por que me faltaron ejemplos en este proyecto
+como fomularios, select-boxes, navBar responsives que se vuelven hamburguesa y dropdowns.

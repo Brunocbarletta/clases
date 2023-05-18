@@ -1,0 +1,13 @@
+Flexbox sirve para todo el layout. Para responsive Design (vistas mobile por ejemplo)
+Viene a reemplazar los "position".
+Facilita la adaptacion a distintos dispositivos.
+Pagina interactiva que me permite jugar con flex-box https://codepen.io/enxaneta/full/adLPwv
+¡MUY IMPORTANTE!
+Flex tiene un eje principal y el secundario/cruzado.
+Estos ejes son X e Y
+El principal va a ser dependiendo la flex-direction que le demos row o column.
+quiere decir que tanto x como y puede ser el principal. Si seteamos row el X sera principal
+y Y sera cruzado. Si seteamos column el principal sera Y y el cruzado sera X.
+Esto es asi creeme bruno del futuro https://desarrolloweb.com/articulos/conceptos-principales-flexbox.html#:~:text=En%20flexbox%20vamos%20a%20tener,y%20el%20secundario%20el%20horizontal.
+
+
