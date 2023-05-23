@@ -1,0 +1,125 @@
+$vista:mobile;
+$h1Desktop: 3rem;
+$h1Mobile: 1.2rem;
+body{
+    @if $vista == desktop {
+        @media only screen and (min-width:1024px){
+            h1{
+                font-size: $h1Desktop;
+            }
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width:767px){
+            h1{
+                font-size: $h1Mobile;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+    } @else {
+        h1{ 
+            font-size:1rem;
+        }
+    }
+}
+
+@for $i from 1 through 10 {
+    .columna-#{$i}{
+        width:10% * $i;
+    }
+}
+.my-h1{
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+
+.my-col{
+    border: 1px solid blueviolet;
+    background: #0eccb3;
+}
+
+
+//Each: $color toma el valor de la lista que ponga despues del "in"
+@each $color in "blue", "yellow", "black" {
+    .#{$color}{
+        color:#{$color}; 
+    }
+}
+
+// Los mapas son variables cuyo valor es una colección de variables. Se definen con un 
+// nombre que los identifica. Las claves suelen ser cadenas o números, mientras que los 
+// valores pueden ser cualquier tipo de dato. 
+// Ejemplo: Se necesita crear una serie de botones para compartir contenido en 
+// distintas redes sociales. Son tres, cada uno con un color. Para no crearlos uno a uno, 
+// podemos generar un mapa con clave “el botón” y valor “el color que tendrá”.
+$map: (key1: value1, key2: value2, key3: value3);
+//Otro ejemplo
+$redesSociales: ( 
+    /*Declaramos nuestro mapa*/
+    twitter: #55acee,
+    facebook: #3a5795,
+    send-mail: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $redSocial, $color in $redesSociales {
+    .btn--#{$redSocial} {
+        background-color: $color;
+    }
+}
+
+//Map-get
+$estilos: (
+    color: #3673D9,
+    centro: center,
+    tFuente: 35px,
+    1rem : 1rem
+);
+div {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
+    font-size:map-get($estilos, tFuente);
+}
+
+//Extend
+.boton {
+    width:200px;
+    height:50px;
+    background-color:white;
+    text-align:center;
+    color:black;
+    border-radius:20px;
+    border:1px solid black;
+}
+.boton--aceptar{
+    @extend .boton;
+    background-color:green;
+    color:yellow;
+}
+.boton--cancelar{
+    @extend .boton;
+    background-color:red;
+    color:yellow;
+}
+
+
+//  Mixing: Puede insertarse en otra clase y ademas puede recibir parametros como una funcion.
+//  Algo copado de los mixing es que son funciones y se pueden exportar por lo que uno puede armarse
+//  librerias para exportar e importar en otros archivos css.  
+@mixin flex-row-center{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.box {
+    @include flex-row-center;
+}
+//  Aca por ejemplo tenemos una funcion/mixin "sizes" incluible, si yo exporto este scss y lo
+//  importo en otro archivo puedo crearme una nueva clase e incluirle el mixing "sizes".
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
+.box {
+    @include sizes(500px, 50px);
+}
+
