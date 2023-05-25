@@ -1,0 +1,22 @@
+Gradientes: Son fondos con degrade en los colores o color.
+
+transformaciones:
+
+Las transformaciones que cuentan como tal son:
++Trasladar un elemento
++Rotarlo
++
+
+Animaciones
+
+
+
+Transiciones
+
+
+Librerias de animaciones:
+https://animate.style/
+https://michalsnik.github.io/aos/
+
+Ejemplo de lo que se puede hacer con animaciones.
+https://codepen.io/morkett/pen/VjByYj
